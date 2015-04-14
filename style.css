@@ -1,12 +1,16 @@
 /*
-  Theme Name:       Casper Child
-  Theme URI:        https://github.com/lacymorrow/casper-wp
-  Author:           Lacy Morrow
-  Author URI:       http://lacymorrow.com
-  Description:      Casper Child Theme
+  Theme Name:       Casper PIGS
+  Theme URI:        https://github.com/lordpigs/caspigs
+  Author:           The Lord of the PIGS
+  Author URI:       http://lordpigs.com
+  Description:      Casper Child Theme for The Lord of the PIGS
   Version:          1.0.0
   Template:         casper
   Usage: Copy the casper-child folder into your wp-content/themes/ directory and activate it in the dashboard.
 */
 
 /* ----- Begin Customizations Here - Enjoy :) ----- */
+
+#wpadminbar {
+    opacity: 0.75 !important;
+ }

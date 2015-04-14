@@ -1,0 +1,185 @@
+@font-face {
+    font-family: "Big Noodle Titling";
+    src: url("../fonts/big-noodle-titling.ttf");
+}
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,700,400);
+
+$navbar-height: 32px;
+$screen-xs-max: 400px;
+
+body {
+    background-color: white !important;
+}
+
+.first-screen {
+    position: relative;
+    height: 100%;
+    background-color: white !important;
+}
+
+.character-header {
+    position: absolute;
+    display: block;
+
+    width: 180px;
+    height: 256px;
+
+    /* BIG SCREEN */
+
+    &.character-header-red {
+        left: 5%;
+        bottom: 35%;
+        z-index: 80;
+    }
+
+    &.character-header-blue {
+        left: 15%;
+        bottom: 15%;
+        z-index: 90;
+    }
+
+    &.character-header-green {
+        right: 15%;
+        bottom: 15%;
+        z-index: 90;
+    }
+
+    &.character-header-yellow {
+        right: 5%;
+        bottom: 35%;
+        z-index: 80;
+    }
+
+    /* TINY SCREEN */
+    @media (max-width: $screen-xs-max) {
+        width: (180px * 0.8);
+        height: (256px * 0.8);
+
+        &.character-header-red {
+            left: 0;
+            bottom: 35%;
+        }
+
+        &.character-header-blue {
+            left: 5%;
+            bottom: 15%;
+        }
+
+        &.character-header-green {
+            right: 5%;
+            bottom: 15%;
+        }
+
+        &.character-header-yellow {
+            right: 0;
+            bottom: 35%;
+        }
+    }
+}
+
+.the-logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    overflow: hidden;
+
+    /*
+    html.csstransforms3d & {
+                transform: translateZ(-1px) scale(2);
+        -webkit-transform: translateZ(-1px) scale(2);
+           -moz-transform: translateZ(-1px) scale(2);
+    }*/
+}
+
+$logo-size: 350px;
+$logo-width: $logo-size;
+$logo-height: $logo-size * 355 / 350;
+$logo-vertical-offset: -18px;
+$logo-xs-reduction: 0.75;
+$shine-size: ($logo-size * 2);
+
+.logo {
+    position: absolute;
+    margin: 3em;
+    left: 50%;
+    top: 50%;
+
+    z-index: 150;
+
+    width: $logo-width;
+    height: $logo-height;
+    margin-left: (-$logo-width / 2);
+    margin-top: (-$logo-height / 2) + $logo-vertical-offset;
+
+    @media (max-width: $screen-xs-max) {
+        width: ($logo-width * $logo-xs-reduction);
+        height: ($logo-height * $logo-xs-reduction);
+        margin-left: (-$logo-width * $logo-xs-reduction / 2);
+        margin-top: (-$logo-height * $logo-xs-reduction / 2 + $logo-vertical-offset);
+    }
+}
+
+.logo-shine {
+    position: absolute;
+    margin: 3em;
+    left: 50%;
+    top: 50%;
+
+    z-index: 50;
+
+    width: $shine-size;
+    height: $shine-size;
+    margin-left: -($shine-size / 2);
+    margin-top: -($shine-size / 2) + $logo-vertical-offset;
+
+    @media (max-width: $screen-xs-max) {
+        width: ($shine-size * $logo-xs-reduction);
+        height: ($shine-size * $logo-xs-reduction);
+        margin-left: (-$shine-size * $logo-xs-reduction / 2);
+        margin-top: (-$shine-size * $logo-xs-reduction / 2 + $logo-vertical-offset * $logo-xs-reduction);
+    }
+
+    /* Animation */
+    -webkit-animation-name: rotate;
+    -webkit-animation-duration: 90s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+
+    animation-name: rotate;
+    animation-duration: 90s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@-webkit-keyframes rotate {
+    from {-webkit-transform: rotate(0deg);}
+    to {-webkit-transform: rotate(360deg);}
+}
+@keyframes rotate {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+
+.navbar-brand {
+    color: white !important;
+    text-transform: uppercase;
+    font-family: "Big Noodle Titling", sans-serif;
+    font-size: 24pt;
+}
+
+.navbar-nav li {
+    text-transform: uppercase;
+    font-family: "Big Noodle Titling";
+    font-size: 18pt;
+
+    a {
+        color: #BBB !important;
+
+        &:hover {
+            color: white !important;
+        }
+    }
+}

@@ -1,0 +1,136 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,700,400);
+@font-face {
+  font-family: "Big Noodle Titling";
+  src: url("../fonts/big-noodle-titling.ttf"); }
+body {
+  background-color: white !important; }
+
+.first-screen {
+  position: relative;
+  height: 100%;
+  background-color: white !important; }
+
+.character-header {
+  position: absolute;
+  display: block;
+  width: 180px;
+  height: 256px;
+  /* BIG SCREEN */
+  /* TINY SCREEN */ }
+  .character-header.character-header-red {
+    left: 5%;
+    bottom: 35%;
+    z-index: 80; }
+  .character-header.character-header-blue {
+    left: 15%;
+    bottom: 15%;
+    z-index: 90; }
+  .character-header.character-header-green {
+    right: 15%;
+    bottom: 15%;
+    z-index: 90; }
+  .character-header.character-header-yellow {
+    right: 5%;
+    bottom: 35%;
+    z-index: 80; }
+  @media (max-width: 400px) {
+    .character-header {
+      width: 144px;
+      height: 204.8px; }
+      .character-header.character-header-red {
+        left: 0;
+        bottom: 35%; }
+      .character-header.character-header-blue {
+        left: 5%;
+        bottom: 15%; }
+      .character-header.character-header-green {
+        right: 5%;
+        bottom: 15%; }
+      .character-header.character-header-yellow {
+        right: 0;
+        bottom: 35%; } }
+
+.the-logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  /*
+  html.csstransforms3d & {
+              transform: translateZ(-1px) scale(2);
+      -webkit-transform: translateZ(-1px) scale(2);
+         -moz-transform: translateZ(-1px) scale(2);
+  }*/ }
+
+.logo {
+  position: absolute;
+  margin: 3em;
+  left: 50%;
+  top: 50%;
+  z-index: 150;
+  width: 350px;
+  height: 355px;
+  margin-left: -175px;
+  margin-top: -195.5px; }
+  @media (max-width: 400px) {
+    .logo {
+      width: 262.5px;
+      height: 266.25px;
+      margin-left: -131.25px;
+      margin-top: -151.125px; } }
+
+.logo-shine {
+  position: absolute;
+  margin: 3em;
+  left: 50%;
+  top: 50%;
+  z-index: 50;
+  width: 700px;
+  height: 700px;
+  margin-left: -350px;
+  margin-top: -368px;
+  /* Animation */
+  -webkit-animation-name: rotate;
+  -webkit-animation-duration: 90s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  animation-name: rotate;
+  animation-duration: 90s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; }
+  @media (max-width: 400px) {
+    .logo-shine {
+      width: 525px;
+      height: 525px;
+      margin-left: -262.5px;
+      margin-top: -276px; } }
+
+@-webkit-keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(360deg); } }
+@keyframes rotate {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
+.navbar-brand {
+  color: white !important;
+  text-transform: uppercase;
+  font-family: "Big Noodle Titling", sans-serif;
+  font-size: 24pt; }
+
+.navbar-nav li {
+  text-transform: uppercase;
+  font-family: "Big Noodle Titling";
+  font-size: 18pt; }
+  .navbar-nav li a {
+    color: #BBB !important; }
+    .navbar-nav li a:hover {
+      color: white !important; }
+
+.wpadminbar {
+  opacity: 0.5 !important; }
