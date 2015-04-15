@@ -4,7 +4,7 @@
     <li class="rrssb-facebook">
       <!-- Replace with your URL. For best results, make sure you page has the proper FB Open Graph tags in header:
       https://developers.facebook.com/docs/opengraph/howtos/maximizing-distribution-media-content/ -->
-      <a href="https://facebook.com/{{ site.social.facebook }}" target="_blank">
+      <a href="<?php echo esc_url( get_theme_mod( 'casper_social_facebook') ); ?>" target="_blank">
         <span class="rrssb-icon">
           <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="28px" height="28px" viewBox="0 0 28 28" enable-background="new 0 0 28 28" xml:space="preserve">
             <path d="M27.825,4.783c0-2.427-2.182-4.608-4.608-4.608H4.783c-2.422,0-4.608,2.182-4.608,4.608v18.434
@@ -20,7 +20,7 @@
     <?php if ( false != get_theme_mod( 'casper_social_twitter')): ?>
     <li class="rrssb-twitter">
       <!-- Replace href with your Meta and URL information  -->
-      <a href="https://twitter.com/{{ site.social.twitter }}" target="_blank">
+      <a href="<?php echo esc_url( get_theme_mod( 'casper_social_twitter') ); ?>" target="_blank">
         <span class="rrssb-icon">
           <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
              width="28px" height="28px" viewBox="0 0 28 28" enable-background="new 0 0 28 28" xml:space="preserve">
@@ -40,7 +40,7 @@
     <?php if ( false != get_theme_mod( 'casper_social_google')): ?>
     <li class="rrssb-googleplus">
       <!-- Replace href with your meta and URL information.  -->
-      <a href="https://plus.google.com/{{ site.social.googleplus }}" rel="publisher" target="_blank">
+      <a href="<?php echo esc_url( get_theme_mod('casper_social_google') ); ?>" rel="publisher" target="_blank">
         <span class="rrssb-icon">
           <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="28px" height="28px" viewBox="0 0 28 28" enable-background="new 0 0 28 28" xml:space="preserve">
             <g>
@@ -68,7 +68,7 @@
 
     <?php if ( false != get_theme_mod( 'casper_social_youtube')): ?>
     <li class="rrssb-youtube">
-      <a href="http://youtube.com/channel/{{ site.social.youtube }}" target="_blank">
+      <a href="<?php echo esc_url( get_theme_mod( 'casper_social_youtube') ); ?>" target="_blank">
         <span class="rrssb-icon">
           <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="28px" height="28px" viewBox="0 0 28 28" enable-background="new 0 0 28 28" xml:space="preserve">
             <path d="M27.688,8.512c0-2.268-1.825-4.093-4.106-4.093H4.389c-2.245,0-4.076,1.825-4.076,4.093v10.976 c0,2.268,1.825,4.093,4.076,4.093h19.192c2.274,0,4.106-1.825,4.106-4.093V8.512z M11.263,18.632V8.321l7.817,5.155L11.263,18.632z" />
