@@ -48,9 +48,6 @@
                 ?>
             </span>
         <?php endif; ?>
-        <?php if (!is_front_page()): ?>
-        <h1 class="post-title"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h1>
-        <?php endif ?>
         <?php if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.
             $image_id = get_post_thumbnail_id();
             $thumb_url = wp_get_attachment_image_src($image_id,'thumbnail', true);
@@ -62,7 +59,7 @@
             <noscript><?php the_post_thumbnail('thumbnail'); ?></noscript>
         <?php } ?>
     </header><!-- .entry-header -->
-    <div class="post-content">
+    <div class="post-content container-fluid">
         <?php the_content(); ?>
         <div class="clear">&nbsp;</div>
     </div><!-- .entry-content -->

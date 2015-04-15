@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,700,400);
 @font-face {
   font-family: "Big Noodle Titling";
@@ -150,3 +151,38 @@ body {
     margin-left: 0;
     left: 0;
     right: 0; } }
+.hentry {
+  width: auto !important;
+  max-width: 100% !important; }
+
+.post-content {
+  padding-left: 0;
+  padding-right: 0; }
+  .post-content h1, .post-content .full-header {
+    text-align: center !important;
+    font-family: "Big Noodle Titling";
+    font-size: 64px;
+    letter-spacing: 0.03em;
+    padding: 0.15em;
+    background: #7f1020;
+    color: #FDD;
+    text-shadow: 0 -1px 1px black; }
+    .post-content h1 a, .post-content h1 a:hover, .post-content .full-header a, .post-content .full-header a:hover {
+      text-decoration: none;
+      color: inherit; }
+    .post-content h1:before, .post-content h1:after, .post-content .full-header:before, .post-content .full-header:after {
+      content: "—";
+      padding: 0.3em; }
+    @media (max-width: 400px) {
+      .post-content h1, .post-content .full-header {
+        font-size: 48px; } }
+  .post-content p, .post-content h2, .post-content h3, .post-content h4, .post-content h5, .post-content h6 {
+    max-width: 780px;
+    margin: 0 auto;
+    padding-left: 0.5em;
+    padding-right: 0.5em; }
+  .post-content .edit-link {
+    text-align: center; }
+
+#masthead {
+  max-height: 250px !important; }

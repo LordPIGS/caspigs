@@ -7,6 +7,9 @@
 $navbar-height: 32px;
 $screen-xs-max: 400px;
 
+$color-bg-darkred: #7f1020;
+$color-fg-white: #FDD;
+
 body {
     background-color: white !important;
 }
@@ -208,4 +211,59 @@ $social-width: 500px;
         left: 0;
         right: 0;
     }
+}
+
+
+.hentry {
+    width: auto !important;
+    max-width: 100% !important;
+}
+
+.post-content {
+    padding-left: 0;
+    padding-right: 0;
+
+    h1, .full-header {
+        text-align: center !important;
+        font-family: "Big Noodle Titling";
+        font-size: 64px;
+        letter-spacing: 0.03em;
+        padding: 0.15em;
+
+        background: $color-bg-darkred;
+        color: $color-fg-white;
+
+        text-shadow: 0 -1px 1px black;
+
+        a, a:hover {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        &:before, &:after {
+            content: "—";
+            padding: 0.3em;
+        }
+
+        @media (max-width: $screen-xs-max) {
+            & {
+                font-size: 48px;
+            }
+        }
+    }
+
+    p, h2, h3, h4, h5, h6 {
+        max-width: 780px;
+        margin: 0 auto;
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+    }
+
+    .edit-link {
+        text-align: center;
+    }
+}
+
+#masthead {
+    max-height: 250px !important;
 }

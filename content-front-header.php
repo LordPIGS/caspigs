@@ -1,4 +1,4 @@
-<header id="masthead" role="banner" class="site-head site-header first-screen">
+<header role="banner" class="site-head site-header first-screen">
   <div class="container-fluid the-logo">
     <img id="shine" class="logo-shine" src="<?php echo get_stylesheet_directory_uri() .'/img/shine2.svg'; ?>" />
     <img class="logo" alt="The Lord of the P.I.G.S." src="<?php echo get_stylesheet_directory_uri() . '/img/pigs-logo.svg'; ?>" />
