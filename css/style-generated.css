@@ -175,6 +175,7 @@ body {
     background-position: center center;
     background-repeat: repeat-y;
     color: #FDD;
+    margin-top: 0.5em;
     text-shadow: 0 -1px 1px black; }
     .post-content h1 a, .post-content h1 a:hover, .post-content .full-header a, .post-content .full-header a:hover {
       text-decoration: none;
@@ -190,6 +191,8 @@ body {
     margin: 0 auto;
     padding-left: 0.5em;
     padding-right: 0.5em; }
+  .post-content ul, .post-content ol {
+    padding-left: 2em; }
   .post-content .edit-link {
     display: block;
     margin: 0 auto;
