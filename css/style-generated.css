@@ -185,7 +185,7 @@ body {
     @media (max-width: 400px) {
       .post-content h1, .post-content .full-header {
         font-size: 48px; } }
-  .post-content p, .post-content h2, .post-content h3, .post-content h4, .post-content h5, .post-content h6 {
+  .post-content p, .post-content h2, .post-content h3, .post-content h4, .post-content h5, .post-content h6, .post-content ul, .post-content ol {
     max-width: 780px;
     margin: 0 auto;
     padding-left: 0.5em;
