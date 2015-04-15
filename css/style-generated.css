@@ -118,11 +118,17 @@ body {
     transform: rotate(0deg); }
   to {
     transform: rotate(360deg); } }
+.navbar {
+  background-image: url(../img/navbar-background.png);
+  background-position: -320px center;
+  background-repeat: repeat-y; }
+
 .navbar-brand {
   color: white !important;
   text-transform: uppercase;
   font-family: "Big Noodle Titling", sans-serif;
-  font-size: 24pt; }
+  font-size: 24pt;
+  text-shadow: 0 0 1px black; }
 
 .navbar-nav li {
   text-transform: uppercase;
@@ -164,7 +170,10 @@ body {
     font-size: 64px;
     letter-spacing: 0.03em;
     padding: 0.15em;
-    background: #7f1020;
+    background-color: #7f1020;
+    background-image: url(../img/header-background.png);
+    background-position: center center;
+    background-repeat: repeat-y;
     color: #FDD;
     text-shadow: 0 -1px 1px black; }
     .post-content h1 a, .post-content h1 a:hover, .post-content .full-header a, .post-content .full-header a:hover {

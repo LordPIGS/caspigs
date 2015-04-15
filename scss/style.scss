@@ -166,11 +166,19 @@ $shine-size: ($logo-size * 2);
     to {transform: rotate(360deg);}
 }
 
+.navbar {
+    background-image: url(../img/navbar-background.png);
+    background-position: -320px center;
+    background-repeat: repeat-y;
+}
+
 .navbar-brand {
     color: white !important;
     text-transform: uppercase;
     font-family: "Big Noodle Titling", sans-serif;
     font-size: 24pt;
+
+    text-shadow: 0 0 1px black;
 }
 
 .navbar-nav li {
@@ -230,7 +238,10 @@ $social-width: 500px;
         letter-spacing: 0.03em;
         padding: 0.15em;
 
-        background: $color-bg-darkred;
+        background-color: $color-bg-darkred;
+        background-image: url(../img/header-background.png);
+        background-position: center center;
+        background-repeat: repeat-y;
         color: $color-fg-white;
 
         text-shadow: 0 -1px 1px black;
