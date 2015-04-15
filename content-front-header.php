@@ -25,4 +25,5 @@
        src="<?php echo get_stylesheet_directory_uri() . '/img/ch-yellow.sm.png'; ?>"
   />
 
+  <?php get_template_part('content', 'social'); ?>
 </header>

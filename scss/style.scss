@@ -183,3 +183,29 @@ $shine-size: ($logo-size * 2);
         }
     }
 }
+
+
+$social-width: 500px;
+
+.social-buttons {
+    position: absolute;
+    left: 50%;
+    bottom: 8px;
+    margin-left: -$social-width / 2;
+    width: $social-width;
+    text-align: center;
+    z-index: 300;
+}
+
+.first-screen .social-buttons {
+    bottom: $navbar-height + 4px;
+}
+
+@media (max-width: $social-width) {
+    .social-buttons {
+        width: 100%;
+        margin-left: 0;
+        left: 0;
+        right: 0;
+    }
+}

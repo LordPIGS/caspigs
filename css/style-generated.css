@@ -132,5 +132,21 @@ body {
     .navbar-nav li a:hover {
       color: white !important; }
 
-.wpadminbar {
-  opacity: 0.5 !important; }
+.social-buttons {
+  position: absolute;
+  left: 50%;
+  bottom: 8px;
+  margin-left: -250px;
+  width: 500px;
+  text-align: center;
+  z-index: 300; }
+
+.first-screen .social-buttons {
+  bottom: 36px; }
+
+@media (max-width: 500px) {
+  .social-buttons {
+    width: 100%;
+    margin-left: 0;
+    left: 0;
+    right: 0; } }
