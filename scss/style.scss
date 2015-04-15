@@ -260,7 +260,9 @@ $social-width: 500px;
     }
 
     .edit-link {
-        text-align: center;
+        display: block;
+        margin: 0 auto;
+        max-width: 780px;
     }
 }
 
