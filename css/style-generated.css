@@ -219,16 +219,16 @@ body {
     font-weight: bold;
     font-family: sans-serif;
     font-height: 12px;
-    background: rgba(0, 0, 0, 0.15);
+    background: #BBB;
     border-radius: 3px; }
     .languages .language, .languages .language a, .languages .lang-item, .languages .lang-item a {
       color: #333; }
     .languages .language:hover, .languages .lang-item:hover {
-      background: rgba(0, 0, 0, 0.25); }
+      background: #333; }
       .languages .language:hover, .languages .language:hover a, .languages .lang-item:hover, .languages .lang-item:hover a {
         color: black; }
   .languages .language-selected, .languages .language-selected:hover {
-    background: rgba(0, 0, 0, 0.6); }
+    background: #666; }
     .languages .language-selected, .languages .language-selected a, .languages .language-selected:hover, .languages .language-selected:hover a {
       color: white; }
 
