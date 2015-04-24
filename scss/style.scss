@@ -286,3 +286,81 @@ $social-width: 500px;
 #masthead {
     max-height: 250px !important;
 }
+
+
+.languages {
+    position: absolute;
+
+    top: $navbar-height - 10px;
+    left: 0;
+    right: 0;
+
+    text-align: right;
+    padding: 8px;
+
+    z-index: 150;
+
+    li {
+        padding: 0;
+        display: inline-block;
+    }
+
+    .language, .lang-item {
+        padding: 0 8px;
+
+        text-transform: uppercase;
+        font-size: 12px;
+        font-weight: bold;
+        font-family: sans-serif;
+        font-height: 12px;
+
+        &, a {
+            color: #333;
+        }
+        background: rgba(0, 0, 0, 0.15);
+
+        border-radius: 3px;
+
+        &:hover {
+            &, a {
+                color: black;
+            }
+            background:rgba(0, 0, 0, 0.25);
+        }
+    }
+
+    .language-selected, .language-selected:hover {
+        &, a {
+            color: white;
+        }
+        background: rgba(0, 0, 0, 0.6);
+    }
+}
+
+.page-languages {
+    padding: 0;
+    margin: -2em 0 -4em;
+    text-align: center;
+
+    li {
+        padding: 0;
+        display: inline-block;
+    }
+
+    .page-language {
+        margin: 0 4px;
+
+        font-size: 16px;
+        font-family: sans-serif;
+
+        text-decoration: underline;
+    }
+
+    .page-language-selected {
+        color: #666 !important;
+
+        font-size: 13px;
+        font-weight: bold;
+        text-decoration: none;
+    }
+}

@@ -25,5 +25,19 @@
        src="<?php echo get_stylesheet_directory_uri() . '/img/ch-yellow.sm.png'; ?>"
   />
 
+  <?php if (function_exists('pll_the_languages')): ?>
+  <ul class="languages">
+      <?php foreach (pll_the_languages(array('hide_if_empty' => false, 'raw' => true)) as $lang): ?>
+
+        <li class="language language-<?php echo $lang['slug']; ?><?php if ($lang['current_lang']): ?> language-selected<?php endif; ?>">
+          <a href="<?php echo $lang['url']; ?>" class="language-change" data-language="<?php echo $lang['slug']; ?>">
+            <?php echo $lang['name']; ?>
+          </a>
+        </li>
+
+      <?php endforeach ?>
+  </ul>
+  <?php endif ?>
+
   <?php get_template_part('content', 'social'); ?>
 </header>

@@ -5,6 +5,21 @@
  * @package Casper
  */
 ?>
+
+<?php if (function_exists('pll_the_languages')): ?>
+<div class="container">
+  <ul class="page-languages">
+    <?php foreach (pll_the_languages(array('post_id' => $post->ID, 'raw' => true)) as $lang): ?>
+      <li class="page-language<?php if ($lang['current_lang']): ?> page-language-selected<?php endif ?>">
+        <?php if (!$lang['current_lang']): ?><a href="<?php echo $lang['url']; ?>"><?php endif ?>
+          <?php echo $lang['name']; ?>
+        <?php if (!$lang['current_lang']): ?></a><?php endif ?>
+      </li>
+    <?php endforeach; ?>
+  </ul>
+</div>
+<?php endif; ?>
+
 <?php
     /* translators: used between list items, there is a space after the comma */
     $category_list = get_the_category_list( __( ', ', 'casper' ) );

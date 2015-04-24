@@ -200,3 +200,52 @@ body {
 
 #masthead {
   max-height: 250px !important; }
+
+.languages {
+  position: absolute;
+  top: 22px;
+  left: 0;
+  right: 0;
+  text-align: right;
+  padding: 8px;
+  z-index: 150; }
+  .languages li {
+    padding: 0;
+    display: inline-block; }
+  .languages .language, .languages .lang-item {
+    padding: 0 8px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+    font-family: sans-serif;
+    font-height: 12px;
+    background: rgba(0, 0, 0, 0.15);
+    border-radius: 3px; }
+    .languages .language, .languages .language a, .languages .lang-item, .languages .lang-item a {
+      color: #333; }
+    .languages .language:hover, .languages .lang-item:hover {
+      background: rgba(0, 0, 0, 0.25); }
+      .languages .language:hover, .languages .language:hover a, .languages .lang-item:hover, .languages .lang-item:hover a {
+        color: black; }
+  .languages .language-selected, .languages .language-selected:hover {
+    background: rgba(0, 0, 0, 0.6); }
+    .languages .language-selected, .languages .language-selected a, .languages .language-selected:hover, .languages .language-selected:hover a {
+      color: white; }
+
+.page-languages {
+  padding: 0;
+  margin: -2em 0 -4em;
+  text-align: center; }
+  .page-languages li {
+    padding: 0;
+    display: inline-block; }
+  .page-languages .page-language {
+    margin: 0 4px;
+    font-size: 16px;
+    font-family: sans-serif;
+    text-decoration: underline; }
+  .page-languages .page-language-selected {
+    color: #666 !important;
+    font-size: 13px;
+    font-weight: bold;
+    text-decoration: none; }
