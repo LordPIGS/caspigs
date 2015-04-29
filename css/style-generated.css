@@ -6,6 +6,9 @@
 body {
   background-color: white !important; }
 
+.site-head {
+  margin-top: 50px; }
+
 .first-screen {
   position: relative;
   height: 100%;
